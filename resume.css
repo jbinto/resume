@@ -1,0 +1,173 @@
+/* Web fonts are neat, but they don't play nice with older browsers. */
+/* They also don't load very well on the subway. */
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* 960 pixels seems to be the standard, though I started with
+		1090px as that was the size of my image. */
+	width: 960px;
+	/*width: 960px;*/
+	margin: auto;
+
+	font-family: "Roboto", sans-serif;
+
+	/* This isn't big enough for high density displays. Anyone
+		with a fancy Retina display will see a repeated background :( */ 
+	background: url(background.jpg);	/* http://www.flickr.com/photos/jbinto/8128484370/ */
+}
+
+
+header {
+	position: relative;
+
+	border-radius: 15px;
+
+	background: url(banner_lores.jpg) no-repeat;   /* http://www.flickr.com/photos/jbinto/8463798746/ */
+
+	height: 200px;
+
+	margin: 25px 0 25px 0;  /* mnemonic for remembering CSS shorthand: "trouble" => TRBL */
+	padding-top: 25px;
+
+	font-family: 'Fjalla One', sans-serif;	
+	color: #deecec;
+	text-shadow: 2px 2px #3e424c;
+}
+
+header img {
+	float: left;
+
+	margin-left: 50px;
+	margin-right: 50px;
+
+	border-radius: 50px;
+	box-shadow: 0px 0px 0px 5px #d0d0d0;
+}
+
+header p {
+	display: inline;
+	padding-right: 25px;
+}
+
+header p a {
+	color: #cbd6ed;
+	text-shadow: #111f3e;
+}
+
+header h1 {
+	font-size: 100px; /* 500% works for Arial. 100px works for Roboto. How to use both? */
+}
+
+
+header p {
+	font-size: 20px;
+}
+
+footer { 
+	border-top: 1px dashed #000000;
+	margin-bottom: 50px;
+	text-align: center;
+	width: auto;
+
+	color: #cbd6ed;
+}
+
+
+
+
+/* Twitter and email icons courtesy Benjamin Humphrey / Jigsoar */
+/* http://www.jigsoaricons.com/ */
+/* Licensed under Creative Commons Attribution 3.0 */
+
+.email {
+	background: url(email.png) no-repeat;
+	padding-left: 32px;
+}
+
+.twitter {
+	background: url(twitter.png) no-repeat;
+	padding-left: 32px;
+}
+
+section {
+	/* something I learned: setting "opacity" affects the text in the container as well,
+		which is not desirable */  
+	background-color: rgba(222, 236, 236, 0.65);
+	padding: 0px 0px 10px 0px;	
+	border-radius: 7px;
+	margin-bottom: 15px;
+
+	border-bottom: 10px solid #43515F;
+
+	font-size: 20px;
+
+}
+
+section:hover {
+	background-color: #cbd6ed;
+}
+
+section p {
+	margin-bottom: 15px;
+	padding: 0 20px 0 20px;
+}
+
+section h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 20px;
+
+	background-color: #03233c;
+	color: #ebf2f7;
+}
+
+section ul {
+	margin-left: 40px;
+}
+
+/* temporarily disable bolding in my bullets 
+	without removing the <strong> tags; see how it looks */ 
+section ul strong {
+	font-weight: normal;
+}
+
+/* don't make visited links purple */
+a {
+	color: #00f;
+}
+
+
+
+/* n.b. Are background images really the correct way to do this?
+		Or should I really use an <img> tag? They're just decorations,
+		and not really part of the content. */
+
+/* Section icons courtesy http://defaulticon.com/ */
+/* Licensed under a Creative Commons Attribution-No Derivative Works 3.0 . */
+
+#about-me h2 {
+	background: url(about.png) center right no-repeat, #03233c;
+}
+
+#education h2 {
+	background: url(books.png) center right no-repeat, #03233c;
+}
+
+#experience h2 {
+	background: url(terminal.png) center right no-repeat, #03233c;
+}
+
+#interests h2 {
+	background: url(city.png) center right no-repeat, #03233c;
+}
+
+
+
